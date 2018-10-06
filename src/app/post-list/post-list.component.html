@@ -1,9 +1,5 @@
 <h1>List of posts</h1>
 <div *ngFor="let post of posts">
-  <h2>{{post.data.title}}</h2>
-  <div><span>id: </span>{{post.data.id}}</div>
-  <div><span>subreddit: </span>{{post.data.subreddit_name_prefixed}}</div>
-  <div *ngIf="post.data.thumbnail.length > 4"><img src={{post.data.thumbnail}} /></div>
-  <div><span>date: </span>{{post.data.created_utc}}</div>
+  <app-post [post]="post"></app-post>
   <hr />
 </div>
