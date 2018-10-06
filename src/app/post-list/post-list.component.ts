@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Post } from '../post';
-import { POSTS } from '../mock-posts';
+import { RedditService } from '../reddit.service';
 
 @Component({
   selector: 'app-post-list',
@@ -9,11 +9,17 @@ import { POSTS } from '../mock-posts';
 })
 export class PostListComponent implements OnInit {
 
-  posts = POSTS;
+  posts: Post[];
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(private redditService: RedditService) { }
+  
+  getPosts(): void {
+    this.posts = this.redditService.getPosts();
   }
+  
+  ngOnInit() {
+    this.getPosts();
+  }
+
 
 }
