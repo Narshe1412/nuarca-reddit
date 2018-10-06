@@ -12,11 +12,11 @@ export class PostListComponent implements OnInit {
   posts: Post[];
 
   constructor(private redditService: RedditService) { }
-  
+
   getPosts(): void {
-    this.posts = this.redditService.getPosts();
+    this.redditService.getPosts().subscribe(posts => this.posts = posts);
   }
-  
+
   ngOnInit() {
     this.getPosts();
   }

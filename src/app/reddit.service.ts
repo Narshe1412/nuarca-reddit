@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
 
 import { Post } from './post';
 import { POSTS } from './mock-posts';
@@ -10,7 +11,7 @@ export class RedditService {
 
   constructor() { }
 
-  getPosts(): Post[] {
-    return POSTS;
+  getPosts(): Observable<Post[]> {
+    return of(POSTS);
   }
 }
