@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Post } from '../post';
+import { POSTS } from '../mock-posts';
 
 @Component({
   selector: 'app-post-list',
@@ -8,13 +9,7 @@ import { Post } from '../post';
 })
 export class PostListComponent implements OnInit {
 
-  post: Post =  {
-    id: 1,
-    title: 'Reddit roxx',
-    subreddit: 'r/angular',
-    image: '',
-    creationDate: '25-05-1982'
-  }
+  posts = POSTS;
 
   constructor() { }
 
