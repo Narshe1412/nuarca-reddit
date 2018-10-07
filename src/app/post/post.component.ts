@@ -9,6 +9,7 @@ import { Post } from '../post';
 export class PostComponent implements OnInit {
   private upvoted: boolean;
   private downvoted: boolean;
+  public visible: boolean;
 
   @Input() post: Post;
 
@@ -17,6 +18,7 @@ export class PostComponent implements OnInit {
   ngOnInit() {
     this.upvoted = false;
     this.downvoted = false;
+    this.visible = true;
   }
 
   upvote(): void {
@@ -45,4 +47,7 @@ export class PostComponent implements OnInit {
     }
   }
 
+  toggleVisible(): void {
+    this.visible = !this.visible;
+  }
 }
