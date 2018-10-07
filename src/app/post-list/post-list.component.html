@@ -31,11 +31,18 @@
     <li class="menu-item">Tools</li>
   </ul>
 </div>
-<div class="mockSearchInfo">
-  <span> About 22,000 results (0.22 seconds)</span>
+<div *ngIf="posts?.length > 0">
+  <div class="mockSearchInfo">
+    <span> About {{posts.length}} results.</span>
+  </div>
+  <div class="search-results">
+    <div *ngFor="let post of posts">
+      <app-post [post]="post"></app-post>
+    </div>
+  </div>  
 </div>
-<div class="search-results">
-  <div *ngFor="let post of posts">
-    <app-post [post]="post"></app-post>
+<div *ngIf="posts?.length == 0">
+  <div class="mockSearchInfo">
+    <span> No results found or you typed the wrong subreddit.</span>
   </div>
 </div>

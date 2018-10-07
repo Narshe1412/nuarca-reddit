@@ -31,7 +31,8 @@ export class RedditService {
               link: item.data.permalink
             };
           })
-        })
+        }),
+        catchError(error => []) // TODO. Return empty array if subreddit does not exist
       )
   }
 }

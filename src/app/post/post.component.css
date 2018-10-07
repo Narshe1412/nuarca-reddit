@@ -25,6 +25,7 @@ a {
     text-decoration: none;
     cursor: pointer;
     color: #1a0dab;
+    font-weight: normal;
 }
 
 a:visited {
@@ -32,7 +33,7 @@ a:visited {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 
 a h3 {

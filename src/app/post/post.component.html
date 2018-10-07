@@ -1,11 +1,9 @@
 <div *ngIf="this.visible" class="search-card">
   <div class="wrapper">
     <div class="post-header">
-      <a href="http://reddit.com/{{post.link}}">
-        <h3>{{post.title}}</h3>
-        <br />
-        <div class="subreddit">{{post.subreddit}}</div>
-      </a> 
+      <h3><a href="http://reddit.com/{{post.link}}">{{post.title}}</a></h3>
+      <br />
+      <div class="subreddit">{{post.subreddit}}</div>
     </div>
     <div class="details">
       <div class="post-controls">
@@ -29,10 +27,10 @@
       </div>
       <div [class.article-box-with-img]="post.image.length > 4" class="text-content">
         <div class="date-box">{{post.creationDate * 1000 | date:"medium" }}</div>
-        <div class="article-text"> 
-            <div *ngIf="post.text">{{(post.text.length>250)? (post.text |
-                slice:0:250)+'...':(post.text)
-                }}</div>
+        <div class="article-text">
+          <div *ngIf="post.text">{{(post.text.length>250)? (post.text |
+            slice:0:250)+'...':(post.text)
+            }}</div>
         </div>
       </div>
     </div>

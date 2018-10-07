@@ -14,9 +14,9 @@ export class PostListComponent implements OnInit {
   faSearch = faSearch;
   faSync = faSync;
   subredditQuery: string;
-  previousQuery: string;
+  previousQuery: string = "angular2"; //default query
 
-  posts: Post[];
+  posts: Post[] = [];
 
   constructor(private redditService: RedditService) { }
 
@@ -25,11 +25,11 @@ export class PostListComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.previousQuery = "angular2"; //default query
     this.getPosts();
   }
 
   refreshPage() {
+    console.log(this.previousQuery)
     this.posts = [];
     this.getPosts(this.previousQuery);
   }
