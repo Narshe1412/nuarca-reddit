@@ -21,5 +21,10 @@ export class PostListComponent implements OnInit {
     this.getPosts();
   }
 
+  refreshPage() {
+    this.posts = [];
+    this.getPosts();
+  }
+
 
 }
