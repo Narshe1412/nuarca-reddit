@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Post } from '../post';
-import { faAngleUp, faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import { faAngleUp, faAngleDown, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-post',
@@ -8,11 +8,12 @@ import { faAngleUp, faAngleDown } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./post.component.css']
 })
 export class PostComponent implements OnInit {
-  private upvoted: boolean;
-  private downvoted: boolean;
+  upvoted: boolean;
+  downvoted: boolean;
   public visible: boolean;
   faAngleDown = faAngleDown;
   faAngleUp = faAngleUp;
+  faEyeSlash = faEyeSlash;
 
   @Input() post: Post;
 

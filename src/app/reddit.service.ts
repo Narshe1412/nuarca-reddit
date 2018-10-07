@@ -4,7 +4,6 @@ import { HttpClient } from '@angular/common/http';
 import { catchError, map, tap } from 'rxjs/operators';
 
 import { Post } from './post';
-import { POSTS } from './mock-posts';
 
 @Injectable({
   providedIn: 'root'

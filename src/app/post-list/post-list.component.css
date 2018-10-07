@@ -1,0 +1,19 @@
+.center {
+    clear: both;
+    position: relative;
+    zoom: 1;
+    margin-top: 3px;
+    display: block;
+}
+
+.center-column {
+    width: 632px;
+    margin: 0 15%;
+    padding: 0 16px;
+}
+
+@media screen and (max-width: 480px) {
+    .center-column { 
+       margin: 0px 10px;
+    } 
+ }

@@ -1,5 +1,9 @@
 <h1>List of posts</h1>
 <button (click)="refreshPage()">Refresh</button>
-<div *ngFor="let post of posts">
-  <app-post [post]="post"></app-post>
+<div class="center">
+  <div class="center-column">
+    <div *ngFor="let post of posts">
+      <app-post [post]="post"></app-post>
+    </div>
+  </div>
 </div>

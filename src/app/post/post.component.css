@@ -1,0 +1,147 @@
+.search-card {
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+    text-align: left;
+    font-weight: normal;
+    color: #222;
+    margin-top:0;
+    margin-bottom: 26px;
+    min-height: 90px;
+    display: block;
+    clear: both;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.post-header {
+    display: inline;
+    font-weight: normal;
+    margin: 0;
+    font-size: small;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #1a0dab;
+}
+
+a:visited {
+    color: #609;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a h3 {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.2;
+    text-align: left;
+}
+
+h3 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.subreddit {
+    padding-bottom: 3px;
+    padding-top: 2px;
+    font-size:14px;
+    color: #006621;
+}
+
+.details {
+    line-height: 18px;
+    color: #545454;
+    max-width: 48em;
+    display: block;
+}
+
+.image-section {
+    height: 65px;
+    width: 116px;
+    background-color: #000;
+    border: 1px solid #ebebeb;
+    line-height: 18px;
+    color: #545454;
+    float: left;
+    overflow: hidden;
+    margin-top: 4px;
+    position: relative;
+    border: 1px solid #ebebeb;
+}
+
+.image-box {
+    height: 65px;
+    width: 116px;
+    line-height: 18px;
+    overflow: hidden;
+    position: absolute;
+    display: block;
+}
+
+img {
+    height: 87px;
+    width: 116px;
+    position: relative;
+    display: block;
+    border: 0;
+}
+
+.article-box-with-img {
+    color: #545454;
+    margin-left: 165px;
+}
+
+.date-box {
+    color: #808080;
+}
+
+.article-text {
+    line-height: 1.4;
+    word-wrap: break-word;
+    color: #545454;
+    font-size: small;
+    font-family: arial,sans-serif;
+}
+
+.post-controls {
+    height: 87px;
+    width: 40px;
+    position: relative;
+    float: left;
+    text-align: center;
+}
+
+.score {
+    width: 34px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+button {
+    width: 34px;
+    border: none;
+    background-color: #fff;
+}
+
+.bg-red {
+    background-color: red;
+    color: #fff;
+}
+
+.bg-green {
+    background-color: green;
+    color: #fff;
+}
