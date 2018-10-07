@@ -17,10 +17,8 @@
 }
 
 .post-header {
-    display: inline;
-    font-weight: normal;
-    margin: 0;
-    font-size: small;
+    font-size: 18px;
+    margin: 3px 0;
 }
 
 a {
@@ -55,9 +53,8 @@ h3 {
 }
 
 .subreddit {
-    padding-bottom: 3px;
-    padding-top: 2px;
-    font-size:14px;
+    font-size: 14px;
+    margin: 3px 0;
     color: #006621;
 }
 
@@ -69,7 +66,7 @@ h3 {
 }
 
 .image-section {
-    height: 65px;
+    height: 78px;
     width: 116px;
     background-color: #000;
     border: 1px solid #ebebeb;
@@ -78,12 +75,13 @@ h3 {
     float: left;
     overflow: hidden;
     margin-top: 4px;
+    margin-right: 4px;
     position: relative;
     border: 1px solid #ebebeb;
 }
 
 .image-box {
-    height: 65px;
+    height: 78px;
     width: 116px;
     line-height: 18px;
     overflow: hidden;
@@ -92,7 +90,7 @@ h3 {
 }
 
 img {
-    height: 87px;
+    height: 80px;
     width: 116px;
     position: relative;
     display: block;
@@ -101,20 +99,21 @@ img {
 
 .article-box-with-img {
     color: #545454;
-    margin-left: 165px;
+    margin-left: 170px;
 }
 
 .date-box {
     color: #808080;
 }
 
-.article-text {
+.text-content {
+    font-size: 13px;
+    margin: 3px 0;
     line-height: 1.4;
     word-wrap: break-word;
     color: #545454;
-    font-size: small;
-    font-family: arial,sans-serif;
 }
+
 
 .post-controls {
     height: 87px;

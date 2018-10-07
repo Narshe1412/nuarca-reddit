@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Post } from '../post';
 import { RedditService } from '../reddit.service';
+import { faSearch, faSync } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-post-list',
@@ -9,6 +11,9 @@ import { RedditService } from '../reddit.service';
 })
 export class PostListComponent implements OnInit {
 
+  faSearch = faSearch;
+  faSync = faSync;
+  
   posts: Post[];
 
   constructor(private redditService: RedditService) { }

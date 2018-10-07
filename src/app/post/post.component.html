@@ -5,7 +5,7 @@
         <h3>{{post.title}}</h3>
         <br />
         <div class="subreddit">{{post.subreddit}}</div>
-      </a>
+      </a> 
     </div>
     <div class="details">
       <div class="post-controls">
@@ -27,7 +27,7 @@
           <img src={{post.image}} />
         </div>
       </div>
-      <div [class.article-box-with-img]="post.image.length > 4">
+      <div [class.article-box-with-img]="post.image.length > 4" class="text-content">
         <div class="date-box">{{post.creationDate * 1000 | date:"medium" }}</div>
         <div class="article-text"> 
             <div *ngIf="post.text">{{(post.text.length>250)? (post.text |
