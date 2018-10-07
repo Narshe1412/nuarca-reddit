@@ -4,4 +4,7 @@ export class Post {
     subreddit: string;
     image: string;
     creationDate: string;
+    score: number;
+    text: string;
+    link: string;
 }

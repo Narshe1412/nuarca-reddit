@@ -15,13 +15,22 @@ export class RedditService {
   constructor(private http: HttpClient) { }
 
   getPosts(): Observable<Post[]> {
-    return this.http.get<Post[]>(this.redditUrl).pipe(
+    return this.http.get<Post[]>(this.redditUrl)
+    .pipe(
       map((response: any) => {
-        const postArray = response.data.children;
-        console.log(postArray);
-        return postArray;
-      })
+        return response.data.children.map(item => {
+          return {
+            id: item.data.id,
+            title: item.data.title,
+            subreddit: item.data.subreddit_name_prefixed,
+            image: item.data.thumbnail,
+            creationDate: item.data.created_utc,
+            score: item.data.score,
+            text: item.data.selftext,
+            link: item.data.permalink
+          };
+        })
+      }) 
     )
   }
-
 }

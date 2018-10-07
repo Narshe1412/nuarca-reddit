@@ -1,8 +1,8 @@
-<a href="http://reddit.com/{{post.data.permalink}}">
-  <h2>{{post.data.title}}</h2>
+<a href="http://reddit.com/{{post.link}}">
+  <h2>{{post.title}}</h2>
 </a>
-<div><span>id: </span>{{post.data.id}}</div>
-<div><span>subreddit: </span>{{post.data.subreddit_name_prefixed}}</div>
-<div *ngIf="post.data.selftext"><span>text: </span>{{post.data.selftext}}</div>
-<div *ngIf="post.data.thumbnail.length > 4"><img src={{post.data.thumbnail}} /></div>
-<div><span>date: </span>{{post.data.created_utc * 1000 | date:"medium" }}</div>
+<div><span>id: </span>{{post.id}}</div>
+<div><span>subreddit: </span>{{post.subreddit}}</div>
+<div *ngIf="post.text"><span>text: </span>{{post.text}}</div>
+<div *ngIf="post.image.length > 4"><img src={{post.image}} /></div>
+<div><span>date: </span>{{post.creationDate * 1000 | date:"medium" }}</div>
