@@ -1,17 +1,33 @@
-<div *ngIf="this.visible">
-  <a href="http://reddit.com/{{post.link}}">
-    <h2>{{post.title}}</h2>
-  </a>
-  <div><span>id: </span>{{post.id}}</div>
-  <div><span>subreddit: </span>{{post.subreddit}}</div>
-  <div *ngIf="post.text"><span>text: </span>{{post.text}}</div>
-  <div *ngIf="post.image.length > 4"><img src={{post.image}} /></div>
-  <div><span>date: </span>{{post.creationDate * 1000 | date:"medium" }}</div>
+<div *ngIf="this.visible" class="search-card">
   <div>
-    <span>score: </span>{{post.score}}
-    <button (click)="upvote()">upvote</button>
-    <button (click)="downvote()">downvote</button>
+    <a href="http://reddit.com/{{post.link}}">
+      <h3>{{post.title}}</h3>
+      <br />
+      <div class="subreddit">{{post.subreddit}}</div>
+    </a>
   </div>
-  <div><button (click)="toggleVisible()">hide</button></div>
-  <hr />
+  <div class="details">
+    <div class="post-controls">
+      <div>
+        <button (click)="upvote()">
+          <fa-icon [icon]="faAngleUp"></fa-icon>
+        </button>
+        <span>{{post.score}}</span>
+        <button (click)="downvote()">
+          <fa-icon [icon]="faAngleDown"></fa-icon>
+        </button>
+      </div>
+    </div>
+    <div *ngIf="post.image.length > 4" class="image-section">
+      <div class="image-box">
+        <img src={{post.image}} />
+      </div>
+    </div>
+    <div [class.article-box-with-img]="post.image.length > 4">
+      <div class="date-box">{{post.creationDate * 1000 | date:"medium" }}</div>
+      <div *ngIf="post.text" class="article-text">{{(post.text.length>250)? (post.text | slice:0:250)+'...':(post.text) }}</div>
+    </div>
+  </div>
+  <div class="hide-control"><button (click)="toggleVisible()">hide</button></div>
+
 </div>
