@@ -1,27 +1,15 @@
-# Nuarca
+# Nuarca Reddit
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.4.
+This project was created as part of the interview process at Nuarca
 
-## Development server
+It consists in a **clever** Reddit front end to increase your productivity at work. It's made to look like the Google search engine, so no one would ask questions if you should be on reddit right now.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The frontend defaults to the angular2 subreddit (per customer requirement) but allows you to type other subreddits in the search field and extract the contents of other subreddits.
 
-## Code scaffolding
+It has the frontend functionality to upvote and downvote, but it's not yet connected to the reddit backend to make it completely functional.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The option to hide posts is not persisten and would reset on page reload.
 
-## Build
+To test use `ng serve` or `npm start` on the development folder (make sure to use `npm install` first to load all dependencies) or use the content on the `dist` folder.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+(c) Manuel Colorado 2018
