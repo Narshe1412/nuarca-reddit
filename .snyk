@@ -64,6 +64,86 @@ patch:
         patched: '2019-10-04T08:08:34.015Z'
     - snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/dep-graph > graphlib > lodash:
         patched: '2019-10-04T08:08:34.015Z'
+    - karma > lodash:
+        patched: '2019-10-04T08:14:29.486Z'
+    - snyk > @snyk/dep-graph > lodash:
+        patched: '2019-10-04T08:14:29.486Z'
+    - karma > combine-lists > lodash:
+        patched: '2019-10-04T08:14:29.486Z'
+    - '@angular-devkit/build-angular > webpack-merge > lodash':
+        patched: '2019-10-04T08:14:29.486Z'
+    - '@angular-devkit/build-angular > stats-webpack-plugin > lodash':
+        patched: '2019-10-04T08:14:29.486Z'
+    - snyk > @snyk/dep-graph > graphlib > lodash:
+        patched: '2019-10-04T08:14:29.486Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/dep-graph > lodash:
+        patched: '2019-10-04T08:14:29.486Z'
+    - snyk > snyk-nuget-plugin > dotnet-deps-parser > lodash:
+        patched: '2019-10-04T08:14:29.486Z'
+    - snyk > snyk-nodejs-lockfile-parser > graphlib > lodash:
+        patched: '2019-10-04T08:14:29.486Z'
+    - '@angular-devkit/build-angular > webpack-dev-server > http-proxy-middleware > lodash':
+        patched: '2019-10-04T08:14:29.486Z'
+    - '@angular-devkit/build-angular > node-sass > sass-graph > lodash':
+        patched: '2019-10-04T08:14:29.486Z'
+    - '@angular-devkit/build-angular > source-map-loader > async > lodash':
+        patched: '2019-10-04T08:14:29.486Z'
+    - karma-coverage-istanbul-reporter > istanbul-api > async > lodash:
+        patched: '2019-10-04T08:14:29.486Z'
+    - snyk > snyk-go-plugin > graphlib > lodash:
+        patched: '2019-10-04T08:14:29.486Z'
+    - karma-coverage-istanbul-reporter > istanbul-api > istanbul-lib-instrument > @babel/types > lodash:
+        patched: '2019-10-04T08:14:29.486Z'
+    - '@angular-devkit/build-angular > node-sass > gaze > globule > lodash':
+        patched: '2019-10-04T08:14:29.486Z'
+    - '@angular-devkit/build-angular > istanbul-instrumenter-loader > istanbul-lib-instrument > babel-traverse > lodash':
+        patched: '2019-10-04T08:14:29.486Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/dep-graph > lodash:
+        patched: '2019-10-04T08:14:29.486Z'
+    - '@angular-devkit/build-angular > istanbul-instrumenter-loader > istanbul-lib-instrument > babel-types > lodash':
+        patched: '2019-10-04T08:14:29.486Z'
+    - '@angular-devkit/build-angular > html-webpack-plugin > lodash':
+        patched: '2019-10-04T08:14:29.486Z'
+    - '@angular-devkit/build-angular > istanbul-instrumenter-loader > istanbul-lib-instrument > babel-generator > lodash':
+        patched: '2019-10-04T08:14:29.486Z'
+    - karma-coverage-istanbul-reporter > istanbul-api > istanbul-lib-instrument > @babel/traverse > lodash:
+        patched: '2019-10-04T08:14:29.486Z'
+    - karma-coverage-istanbul-reporter > istanbul-api > istanbul-lib-instrument > @babel/generator > lodash:
+        patched: '2019-10-04T08:14:29.486Z'
+    - '@angular-devkit/build-angular > istanbul-instrumenter-loader > istanbul-lib-instrument > babel-template > lodash':
+        patched: '2019-10-04T08:14:29.486Z'
+    - karma-coverage-istanbul-reporter > istanbul-api > istanbul-lib-instrument > @babel/generator > @babel/types > lodash:
+        patched: '2019-10-04T08:14:29.486Z'
+    - karma-coverage-istanbul-reporter > istanbul-api > istanbul-lib-instrument > @babel/traverse > @babel/generator > lodash:
+        patched: '2019-10-04T08:14:29.486Z'
+    - karma-coverage-istanbul-reporter > istanbul-api > istanbul-lib-instrument > @babel/template > @babel/types > lodash:
+        patched: '2019-10-04T08:14:29.486Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/dep-graph > graphlib > lodash:
+        patched: '2019-10-04T08:14:29.486Z'
+    - karma-coverage-istanbul-reporter > istanbul-api > istanbul-lib-instrument > @babel/traverse > @babel/types > lodash:
+        patched: '2019-10-04T08:14:29.486Z'
+    - '@angular-devkit/build-angular > istanbul-instrumenter-loader > istanbul-lib-instrument > babel-generator > babel-types > lodash':
+        patched: '2019-10-04T08:14:29.486Z'
+    - '@angular-devkit/build-angular > istanbul-instrumenter-loader > istanbul-lib-instrument > babel-template > babel-types > lodash':
+        patched: '2019-10-04T08:14:29.486Z'
+    - '@angular-devkit/build-angular > istanbul-instrumenter-loader > istanbul-lib-instrument > babel-template > babel-traverse > lodash':
+        patched: '2019-10-04T08:14:29.486Z'
+    - '@angular-devkit/build-angular > istanbul-instrumenter-loader > istanbul-lib-instrument > babel-traverse > babel-types > lodash':
+        patched: '2019-10-04T08:14:29.486Z'
+    - karma-coverage-istanbul-reporter > istanbul-api > istanbul-lib-instrument > @babel/traverse > @babel/generator > @babel/types > lodash:
+        patched: '2019-10-04T08:14:29.486Z'
+    - karma-coverage-istanbul-reporter > istanbul-api > istanbul-lib-instrument > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2019-10-04T08:14:29.486Z'
+    - '@angular-devkit/build-angular > istanbul-instrumenter-loader > istanbul-lib-instrument > babel-template > babel-traverse > babel-types > lodash':
+        patched: '2019-10-04T08:14:29.486Z'
+    - karma-coverage-istanbul-reporter > istanbul-api > istanbul-lib-instrument > @babel/traverse > @babel/helper-function-name > @babel/types > lodash:
+        patched: '2019-10-04T08:14:29.486Z'
+    - karma-coverage-istanbul-reporter > istanbul-api > istanbul-lib-instrument > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
+        patched: '2019-10-04T08:14:29.486Z'
+    - karma-coverage-istanbul-reporter > istanbul-api > istanbul-lib-instrument > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2019-10-04T08:14:29.486Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/dep-graph > graphlib > lodash:
+        patched: '2019-10-04T08:14:29.486Z'
   SNYK-JS-HTTPSPROXYAGENT-469131:
     - protractor > browserstack > https-proxy-agent:
         patched: '2019-10-03T21:30:32.526Z'
