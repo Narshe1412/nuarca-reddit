@@ -54,6 +54,16 @@ patch:
         patched: '2019-07-03T21:31:05.643Z'
     - karma-coverage-istanbul-reporter > istanbul-api > istanbul-lib-instrument > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
         patched: '2019-07-03T21:31:05.643Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/dep-graph > lodash:
+        patched: '2019-10-04T08:08:34.015Z'
+    - snyk > snyk-nuget-plugin > dotnet-deps-parser > lodash:
+        patched: '2019-10-04T08:08:34.015Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/dep-graph > lodash:
+        patched: '2019-10-04T08:08:34.015Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/dep-graph > graphlib > lodash:
+        patched: '2019-10-04T08:08:34.015Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/dep-graph > graphlib > lodash:
+        patched: '2019-10-04T08:08:34.015Z'
   SNYK-JS-HTTPSPROXYAGENT-469131:
     - protractor > browserstack > https-proxy-agent:
         patched: '2019-10-03T21:30:32.526Z'
